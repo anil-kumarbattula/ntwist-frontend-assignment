@@ -10,6 +10,8 @@ function submitForm(event) {
   event.preventDefault();
 
   const display = document.getElementById("timeTaken");
+  const form = document.getElementById("myForm");
+  const confirmationDisplay = document.getElementById("confirmationMessage");
 
   if (startTime) {
     const endTime = new Date();
@@ -19,5 +21,7 @@ function submitForm(event) {
     display.textContent = "No interaction detected before submission.";
   }
 
+  confirmationDisplay.textContent = "✅ Your form has been submitted successfully!";
+  form.reset();
   startTime = null; // Reset timer
 }
