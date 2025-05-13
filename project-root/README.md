@@ -88,17 +88,8 @@ This project consists of a multi-page static website with different components d
 
 ---
 
-## 🛠️ Customization
-
-You can easily:
-- Modify the questions and answers in `faq.html`.
-- Add more names in `sort.html`.
-- Extend the form with new fields in `index.html`.
-
----
-
 ## 📬 Contact
 
-For questions about the project, contact [Finmee Technologies](https://www.ntwist.com).
+For questions about the project, contact [Anil Kumar Battula](mailto:anilkumarbattula1120@gmail.com).
 
 ---
