@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,27 +8,28 @@
 html, body {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f9;
+  background-color: #f3f6fa;
   color: #333;
 }
 
+/* Input base font */
 input,
 textarea {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: inherit;
 }
 
-/* Layout styling */
+/* Layout container */
 .container {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Sidebar on the left */
+/* Sidebar styling */
 .sidebar {
   width: 260px;
-  background-color: #223344;
-  color: white;
+  background-color: #1f2937; /* dark slate */
+  color: #e0eaf3;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
@@ -44,11 +45,11 @@ textarea {
 
 .sidebar p {
   font-size: 14px;
-  color: #cfd8dc;
+  color: #cbd5e1;
   line-height: 1.6;
 }
 
-/* Main content on the right */
+/* Main form content */
 .main-content {
   flex-grow: 1;
   overflow-y: auto;
@@ -60,10 +61,10 @@ textarea {
 
 /* Form styling */
 form {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px 40px;
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
   width: 100%;
   max-width: 500px;
 }
@@ -80,7 +81,7 @@ form textarea {
   width: 100%;
   padding: 12px;
   margin-top: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
   font-size: 14px;
   transition: border-color 0.2s;
@@ -88,7 +89,7 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-  border-color: #007bff;
+  border-color: #4f46e5; /* indigo */
   outline: none;
 }
 
@@ -98,7 +99,7 @@ form button[type="submit"] {
   width: 50%;
   padding: 14px;
   margin: 30px auto 0;
-  background-color: #007bff;
+  background-color: #2563eb; /* primary blue */
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -110,10 +111,10 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover,
 form button[type="submit"]:focus {
-  background-color: #005dc1;
+  background-color: #1d4ed8; /* darker blue */
 }
 
-/* Message container */
+/* Confirmation + time feedback */
 .message-container {
   margin-top: 20px;
   width: 100%;
@@ -122,24 +123,24 @@ form button[type="submit"]:focus {
 }
 
 #confirmationMessage {
-  background-color: #e6f9ec;
-  color: #2d7a46;
+  background-color: #dcfce7; /* soft green */
+  color: #166534;           /* deep green text */
   font-weight: bold;
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #b8e2c5;
+  border: 1px solid #bbf7d0;
   margin-bottom: 10px;
 }
 
 #timeTaken {
-  background-color: #f5f5f5;
-  color: #555;
+  background-color: #f9fafb; /* very light gray */
+  color: #374151;            /* slate gray text */
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #e5e7eb;
 }
 
-/* Responsive Layout */
+/* Responsive layout */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -160,4 +161,3 @@ form button[type="submit"]:focus {
     max-width: 100%;
   }
 }
-
