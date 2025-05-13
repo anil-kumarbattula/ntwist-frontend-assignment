@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Form with Validation</title>
+    <!-- Link to form-specific style css file -->
     <link rel="stylesheet" href="assets/css/index.css">
+    <!-- Link to form-specific logic js file -->
     <script src="assets/js/timeTaken.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <!-- Sidebar with form instructions -->
+    <!-- Sidebar with form instructions -->
     <aside class="sidebar" aria-label="Form instructions">
       <h2>Form Portal</h2>
       <p>Fill out the form to get started.</p>
       <p>Click into any field to begin tracking time.</p>
       <p>Click on Submit for Confirmation Message and Time taken to fill the Form</p>
     </aside>
-     <!-- Main form content -->
+        <!-- Main form content -->
         <main class="main-content">
             <form id="myForm" onsubmit="submitForm(event)">
+                <!-- Form field to enter name -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required 
                     placeholder="Enter Name" 
@@ -28,6 +31,7 @@
                     onclick="startTimer()">
                 <br><br>
 
+                <!-- Form field to enter email -->
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required 
                     placeholder="Enter Email"
@@ -35,18 +39,21 @@
                     onclick="startTimer()">
                 <br><br>
 
+                <!-- Form field to enter message -->
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required 
                     placeholder="Enter Message"
                     onclick="startTimer()"></textarea>
                 <br><br>
 
+                <!-- Submit button triggers confirmation message and total time taken to fill the form-->
                 <button type="submit">Submit</button>
             </form>
         
 
         <!-- Output messages -->
         <div class="message-container">
+            <!-- Confirmation message and time taken to fill the form -->
             <p id="confirmationMessage"></p>
             <p id="timeTaken"></p>
         </div>
