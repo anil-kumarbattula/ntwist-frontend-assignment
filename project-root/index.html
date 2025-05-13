@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Assignment</title>
+    <title>Responsive Form with Validation</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <script src="assets/js/timeTaken.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <aside class="sidebar">
-            <h2>Form Portal</h2>
-            <p>Fill out the form:</p>
-            <p>Welcome to the form portal.</p>
-        </aside>
+        <!-- Sidebar with form instructions -->
+    <aside class="sidebar" aria-label="Form instructions">
+      <h2>Form Portal</h2>
+      <p>Fill out the form to get started.</p>
+      <p>Click into any field to begin tracking time.</p>
+    </aside>
+     <!-- Main form content -->
         <main class="main-content">
             <form id="myForm" onsubmit="submitForm(event)">
                 <label for="name">Name:</label>
@@ -42,6 +44,7 @@
             </form>
         
 
+        <!-- Output messages -->
         <div class="message-container">
             <p id="confirmationMessage"></p>
             <p id="timeTaken"></p>
